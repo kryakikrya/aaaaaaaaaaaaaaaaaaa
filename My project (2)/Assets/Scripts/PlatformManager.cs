@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 public class PlatformManager : MonoBehaviour
 {
     [SerializeField] LifeEnergy energy; // висит на UI
-    [SerializeField] Animator animator;
+    //[SerializeField] Animator animator;
     private int CurrentLevel;
     private int LEPS; //life energy per second
     private void Start()
@@ -17,10 +17,10 @@ public class PlatformManager : MonoBehaviour
         }
         StartCoroutine(FarmLifeEnergy());
     }
-    public void ActivatePlatform()
-    {
-        animator.SetBool("isActive", true);
-    }
+    //public void ActivatePlatform()
+    //{
+    //    animator.SetBool("isActive", true);
+    //}
     public void LevelUp()
     {
         CurrentLevel += 1;

@@ -13,4 +13,8 @@ public class LifeEnergy : MonoBehaviour
     {
         _lifeEnergy += plus;
     }
+    public void DecreaseLifeEnergy(int minus)
+    {
+        _lifeEnergy -= minus;
+    }
 }
