@@ -1054,7 +1054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
-  animator: {fileID: 258574167}
 --- !u!95 &258574167
 Animator:
   serializedVersion: 7
@@ -2532,7 +2531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
-  animator: {fileID: 1009574283}
 --- !u!95 &1009574283
 Animator:
   serializedVersion: 7
@@ -3470,7 +3468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
-  animator: {fileID: 1517342264}
 --- !u!95 &1517342264
 Animator:
   serializedVersion: 7
@@ -3857,7 +3854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
-  animator: {fileID: 1857663787}
 --- !u!95 &1857663787
 Animator:
   serializedVersion: 7
