@@ -7,7 +7,7 @@ public class PlatformManager : MonoBehaviour
     [SerializeField] LifeEnergy energy; // висит на UI
     //[SerializeField] Animator animator;
     private int CurrentLevel;
-    private int LEPS; //life energy per second
+    private double LEPS; //life energy per second
     private void Start()
     {
         if (CurrentLevel < 2)

@@ -3,17 +3,17 @@ using UnityEngine;
 
 public class LifeEnergy : MonoBehaviour
 {
-    private int _lifeEnergy;
+    private double _lifeEnergy;
 
-    public int GetLifeEnergy()
+    public double GetLifeEnergy()
     {
         return _lifeEnergy;
     }
-    public void IncreaseLifeEnergy(int plus)
+    public void IncreaseLifeEnergy(double plus)
     {
         _lifeEnergy += plus;
     }
-    public void DecreaseLifeEnergy(int minus)
+    public void DecreaseLifeEnergy(double minus)
     {
         _lifeEnergy -= minus;
     }

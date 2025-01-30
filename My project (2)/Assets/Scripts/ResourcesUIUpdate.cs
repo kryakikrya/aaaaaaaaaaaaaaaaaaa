@@ -16,7 +16,7 @@ public class ResourcesUIUpdate : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(1);
-            _lifeEnergyText.text = energy.GetLifeEnergy() + "";
+            _lifeEnergyText.text = energy.GetLifeEnergy()/1 + "";
         }
     }
 }

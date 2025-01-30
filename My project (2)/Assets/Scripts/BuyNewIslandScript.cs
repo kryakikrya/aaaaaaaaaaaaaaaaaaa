@@ -5,7 +5,7 @@ public class BuyNewIslandScript : MonoBehaviour
 {
     [SerializeField] LifeEnergy energy;
     [SerializeField] GameObject _islandPrefab;
-    public int _price;
+    public double _price;
     
     public void BuyNewIsland()
     {
