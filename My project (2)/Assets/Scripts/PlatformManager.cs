@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 public class PlatformManager : MonoBehaviour
 {
     [SerializeField] LifeEnergy energy; // висит на UI
+    [SerializeField] double _basicLeps;
     //[SerializeField] Animator animator;
     private int CurrentLevel;
     private double LEPS; //life energy per second
@@ -13,7 +14,7 @@ public class PlatformManager : MonoBehaviour
         if (CurrentLevel < 2)
         {
             CurrentLevel = 1;
-            LEPS = 1;
+            LEPS = _basicLeps;
         }
         StartCoroutine(FarmLifeEnergy());
     }
@@ -21,16 +22,16 @@ public class PlatformManager : MonoBehaviour
     //{
     //    animator.SetBool("isActive", true);
     //}
-    public void LevelUp()
+    public void LevelUp(double buff)
     {
         CurrentLevel += 1;
-        LEPS = CurrentLevel;
+        LEPS *= buff;
     }
     private IEnumerator FarmLifeEnergy()
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             energy.IncreaseLifeEnergy(LEPS);
         }
     }

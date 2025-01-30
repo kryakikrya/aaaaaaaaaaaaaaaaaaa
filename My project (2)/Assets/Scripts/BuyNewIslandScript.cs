@@ -13,6 +13,7 @@ public class BuyNewIslandScript : MonoBehaviour
         {
             energy.DecreaseLifeEnergy(_price);
             _islandPrefab.SetActive(true);
+            Destroy(gameObject);
         }
     }
     

@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class UpgradeButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] LifeEnergy energy;
+    [SerializeField] PlatformManager _island;
+    [SerializeField] double buff;
+    public double _price;
+    public double _coef;
 
-    // Update is called once per frame
-    void Update()
+    public void LevelUp()
     {
-        
+        _island.LevelUp(buff);
+        _price *= _coef;
     }
 }

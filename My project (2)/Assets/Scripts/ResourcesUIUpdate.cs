@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ResourcesUIUpdate : MonoBehaviour
@@ -16,7 +17,7 @@ public class ResourcesUIUpdate : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(1);
-            _lifeEnergyText.text = energy.GetLifeEnergy()/1 + "";
+            _lifeEnergyText.text = Mathf.Round((float)energy.GetLifeEnergy()) + "";
         }
     }
 }

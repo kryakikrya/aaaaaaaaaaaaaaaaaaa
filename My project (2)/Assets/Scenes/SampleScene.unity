@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 3050261}
   - component: {fileID: 3050260}
   - component: {fileID: 3050259}
+  - component: {fileID: 3050262}
   m_Layer: 5
   m_Name: SawmillUpgrade
   m_TagString: Untagged
@@ -303,7 +304,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3050260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3050262}
+        m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
+        m_MethodName: LevelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3050260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +355,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3050257}
   m_CullTransparentMesh: 1
+--- !u!114 &3050262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3050257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd1aabcd1f3f2c4aabdf439b72405a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 268353558}
+  _island: {fileID: 258574166}
+  buff: 1.07
+  _price: 1500
+  _coef: 1.15
 --- !u!1 &38106202
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
   _islandPrefab: {fileID: 1857663785}
-  _price: 10
+  _price: 15000
 --- !u!1 &81825222
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +669,7 @@ GameObject:
   - component: {fileID: 134783778}
   - component: {fileID: 134783777}
   - component: {fileID: 134783776}
+  - component: {fileID: 134783779}
   m_Layer: 5
   m_Name: BasicIslandUpgrade (1)
   m_TagString: Untagged
@@ -709,7 +740,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 134783777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 134783779}
+        m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
+        m_MethodName: LevelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &134783777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,6 +791,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134783774}
   m_CullTransparentMesh: 1
+--- !u!114 &134783779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134783774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd1aabcd1f3f2c4aabdf439b72405a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 268353558}
+  _island: {fileID: 1009574282}
+  buff: 1.06
+  _price: 150
+  _coef: 1.07
 --- !u!1 &173424544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
+  _basicLeps: 400
 --- !u!95 &258574167
 Animator:
   serializedVersion: 7
@@ -1665,7 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
   _islandPrefab: {fileID: 1517342262}
-  _price: 20
+  _price: 100000
 --- !u!1 &778763153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,6 +2592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
+  _basicLeps: 50
 --- !u!95 &1009574283
 Animator:
   serializedVersion: 7
@@ -2658,6 +2720,7 @@ GameObject:
   - component: {fileID: 1013771503}
   - component: {fileID: 1013771502}
   - component: {fileID: 1013771501}
+  - component: {fileID: 1013771504}
   m_Layer: 5
   m_Name: NecropolisUpgrade
   m_TagString: Untagged
@@ -2728,7 +2791,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1013771502}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1013771504}
+        m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
+        m_MethodName: LevelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1013771502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2767,6 +2842,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013771499}
   m_CullTransparentMesh: 1
+--- !u!114 &1013771504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013771499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd1aabcd1f3f2c4aabdf439b72405a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 268353558}
+  _island: {fileID: 1857663786}
+  buff: 1.08
+  _price: 4000
+  _coef: 1.14
 --- !u!1 &1278232409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,6 +3417,7 @@ GameObject:
   - component: {fileID: 1516693941}
   - component: {fileID: 1516693940}
   - component: {fileID: 1516693939}
+  - component: {fileID: 1516693942}
   m_Layer: 5
   m_Name: TempleUpgrade
   m_TagString: Untagged
@@ -3395,7 +3488,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1516693940}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1516693942}
+        m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
+        m_MethodName: LevelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1516693940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3434,6 +3539,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516693937}
   m_CullTransparentMesh: 1
+--- !u!114 &1516693942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516693937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd1aabcd1f3f2c4aabdf439b72405a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 268353558}
+  _island: {fileID: 1517342263}
+  buff: 1.09
+  _price: 10000
+  _coef: 1.13
 --- !u!1 &1517342262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +3590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
+  _basicLeps: 3000
 --- !u!95 &1517342264
 Animator:
   serializedVersion: 7
@@ -3854,6 +3977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
+  _basicLeps: 1000
 --- !u!95 &1857663787
 Animator:
   serializedVersion: 7
@@ -4168,10 +4292,10 @@ MonoBehaviour:
   Button1: {fileID: 2119370358}
   Price1: {fileID: 2119370363}
   Button2: {fileID: 38106202}
-  Price2: {fileID: 0}
-  Button3: {fileID: 0}
-  Price3: {fileID: 0}
-  energy: {fileID: 0}
+  Price2: {fileID: 38106207}
+  Button3: {fileID: 777308657}
+  Price3: {fileID: 777308662}
+  energy: {fileID: 268353558}
 --- !u!1 &2031459001
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,7 +4725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energy: {fileID: 268353558}
   _islandPrefab: {fileID: 258574165}
-  _price: 5
+  _price: 1000
 --- !u!1 &2136266212
 GameObject:
   m_ObjectHideFlags: 0

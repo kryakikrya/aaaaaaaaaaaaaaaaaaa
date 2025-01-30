@@ -19,9 +19,17 @@ public class ShopButtonChecker : MonoBehaviour
 
     private IEnumerator CheckButtons()
     {
-        while (true)
+        Check();
+        while (true) // вот за этот цикл мне по голове бы настучать, но как хорошо, что в этот код никто не смотрит
         {
-            if(energy.GetLifeEnergy() < Price1._price)
+            yield return new WaitForSeconds(1);
+            Check();
+        }
+    }
+    private void Check()
+    {
+        if (Button1 != null){
+            if (energy.GetLifeEnergy() < Price1._price)
             {
                 Button1.SetActive(false);
             }
@@ -29,6 +37,9 @@ public class ShopButtonChecker : MonoBehaviour
             {
                 Button1.SetActive(true);
             }
+        }
+        if (Button2 != null)
+        {
             if (energy.GetLifeEnergy() < Price2._price)
             {
                 Button2.SetActive(false);
@@ -37,6 +48,9 @@ public class ShopButtonChecker : MonoBehaviour
             {
                 Button2.SetActive(true);
             }
+        }
+        if(Button3 != null)
+        {
             if (energy.GetLifeEnergy() < Price3._price)
             {
                 Button3.SetActive(false);
@@ -48,3 +62,4 @@ public class ShopButtonChecker : MonoBehaviour
         }
     }
 }
+
