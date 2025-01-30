@@ -7,6 +7,8 @@ public class ResourcesUIUpdate : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _lifeEnergyText;
     [SerializeField] LifeEnergy energy;
+    [SerializeField] TextMeshProUGUI _lovePowerText;
+    [SerializeField] LovePower lovePower;
 
     private void Start()
     {
@@ -18,6 +20,7 @@ public class ResourcesUIUpdate : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             _lifeEnergyText.text = Mathf.Round((float)energy.GetLifeEnergy()) + "";
+            _lovePowerText.text = Mathf.Round((float)lovePower.GetLovePower()) + "";
         }
     }
 }
