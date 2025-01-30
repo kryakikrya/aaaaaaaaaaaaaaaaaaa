@@ -11,7 +11,6 @@ public class LovePower : MonoBehaviour
     }
     public double GetLovePower()
     {
-        Debug.Log(_lovePower);
         return _lovePower;
     }
     public void IncreaseLovePower(double plus)

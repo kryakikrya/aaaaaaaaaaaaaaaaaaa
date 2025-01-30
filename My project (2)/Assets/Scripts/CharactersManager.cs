@@ -11,16 +11,13 @@ public class CharactersManager : MonoBehaviour
     [SerializeField] GameObject loveMassage;
     private void Start()
     {
-        Debug.Log("1");
         StartCoroutine(Reload());
     }
     private IEnumerator Reload()
     {
         while (true)
         {
-            Debug.Log("2");
-            yield return new WaitForSeconds(3);
-            Debug.Log("3");
+            yield return new WaitForSeconds(30);
             CreateLoveBubble();
         }
     }
@@ -28,8 +25,7 @@ public class CharactersManager : MonoBehaviour
     {
         if (CurrentCharactersList.Count > 0)
         {
-            Instantiate(loveMassage, CurrentCharactersList[Random.Range(0, CurrentCharactersList.Count - 1)].transform);
-            Debug.Log("4");
+            Instantiate(loveMassage, CurrentCharactersList[Random.Range(0, CurrentCharactersList.Count)].transform);
         }
     }
 }
