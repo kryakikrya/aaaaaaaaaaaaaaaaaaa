@@ -9,6 +9,7 @@ public class ResourcesUIUpdate : MonoBehaviour
     [SerializeField] LifeEnergy energy;
     [SerializeField] TextMeshProUGUI _lovePowerText;
     [SerializeField] LovePower lovePower;
+    
 
     private void Start()
     {

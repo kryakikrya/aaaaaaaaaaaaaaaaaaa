@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class LovePower : MonoBehaviour
 {
-    private double _lovePower;
+    public double _lovePower;
+    public double LPPC; //love power per click
+
+    private void Start()
+    {
+        LPPC = 50;
+    }
     public double GetLovePower()
     {
+        Debug.Log(_lovePower);
         return _lovePower;
     }
     public void IncreaseLovePower(double plus)

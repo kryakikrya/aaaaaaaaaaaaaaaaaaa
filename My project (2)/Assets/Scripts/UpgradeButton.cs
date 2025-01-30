@@ -10,8 +10,11 @@ public class UpgradeButton : MonoBehaviour
 
     public void LevelUp()
     {
-        _island.LevelUp(buff);
-        energy.DecreaseLifeEnergy(_price);
-        _price *= _coef;
+        if (energy.GetLifeEnergy() >= _price)
+        {
+            _island.LevelUp(buff);
+            energy.DecreaseLifeEnergy(_price);
+            _price *= _coef;
+        }
     }
 }
