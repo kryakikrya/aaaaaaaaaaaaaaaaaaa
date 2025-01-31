@@ -9,8 +9,10 @@ public class PlatformManager : MonoBehaviour
     //[SerializeField] Animator animator;
     private int CurrentLevel;
     private double LEPS; //life energy per second
+    private double _evolutionUp;
     private void Start()
     {
+        _evolutionUp = 1;
         if (CurrentLevel < 2)
         {
             CurrentLevel = 1;
@@ -27,12 +29,16 @@ public class PlatformManager : MonoBehaviour
         CurrentLevel += 1;
         LEPS *= buff;
     }
+    public void EvolutionUp()
+    {
+        _evolutionUp += 0.5;
+    }
     private IEnumerator FarmLifeEnergy()
     {
         while (true)
         {
             yield return new WaitForSeconds(3);
-            energy.IncreaseLifeEnergy(LEPS);
+            energy.IncreaseLifeEnergy(LEPS * _evolutionUp);
         }
     }
 }

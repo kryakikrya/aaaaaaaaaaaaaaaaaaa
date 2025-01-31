@@ -9,8 +9,10 @@ public class BuyNewIslandScript : MonoBehaviour
     
     public void BuyNewIsland()
     {
+        Debug.Log("1");
         if (energy.GetLifeEnergy() >= _price)
         {
+            Debug.Log("2");
             energy.DecreaseLifeEnergy(_price);
             _islandPrefab.SetActive(true);
             Destroy(gameObject);
