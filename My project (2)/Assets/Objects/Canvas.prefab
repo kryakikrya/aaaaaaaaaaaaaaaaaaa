@@ -161,7 +161,7 @@ RectTransform:
   m_GameObject: {fileID: 5496618982807087308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3338757151942498739}
@@ -169,7 +169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7698464990202171456
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1714017481826447736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,4 +247,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c510a9fa6246545b67b6c849c16e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lovePower: {fileID: 487985707197279843, guid: 400f08f47799b994e82096759ad5f43c, type: 3}
