@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4772604068535553464}
   - component: {fileID: 2142250427390972933}
   - component: {fileID: 9197961569293169553}
+  - component: {fileID: 5603071668754135401}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -136,6 +137,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5603071668754135401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423038051412014231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4656e9559b25324e87113c8fb0e16fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5496618982807087308
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,10 +161,8 @@ GameObject:
   - component: {fileID: 7698464990202171456}
   - component: {fileID: 3949378360920944519}
   - component: {fileID: 1714017481826447736}
-  - component: {fileID: 5613604388144264169}
-  - component: {fileID: 7496382050769819691}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: LoveText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +209,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!114 &3949378360920944519
 MonoBehaviour:
@@ -222,7 +233,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1714017481826447736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,28 +251,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5613604388144264169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5496618982807087308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c510a9fa6246545b67b6c849c16e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7496382050769819691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5496618982807087308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4656e9559b25324e87113c8fb0e16fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 9197961569293169553}

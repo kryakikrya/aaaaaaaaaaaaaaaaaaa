@@ -16,9 +16,10 @@ public class RandomTextScript : MonoBehaviour
         "О не-е-ет. Я хотел быть вампиром, а не этим! Ну, ладно.", "Зачем скелетам штаны? Зачем?", "Да, я умер в конце Драйва.",
         "Лунная ночь. Завтра будет такая же. И послезавтра. И после-послезавтра. Круто.", "Мракарий так часто пропускает пары в нашем университете… А казалось бы, главный преподаватель!",
         "Кошачий мыс - мое любимое место… Люблю кошек! Здорово, что они тоже умирают!", "52", "А где Боб? Бо-о-об? Ты тут?"};
-    [SerializeField] TextMeshProUGUI text;
     void Start()
     {
+        Transform textObj = gameObject.transform.GetChild(0);
+        TextMeshProUGUI text = textObj.GetComponent<TextMeshProUGUI>();
         int id = Random.Range(0, 28);
         text.text = PhrasesList[id];
     }
