@@ -27,7 +27,7 @@ public class UpgradeButton : MonoBehaviour
     }
     public void EvolutionUp()
     {
-        if (energy.GetLifeEnergy() >= _price)
+        if (power.GetLovePower() >= _price)
         {
             _island.EvolutionUp();
             power.DecreaseLovePower(_price);
